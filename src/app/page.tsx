@@ -1,12 +1,14 @@
+import AppContainer from '@/components/appContainer';
+import HeroSection from '@/components/heroSection';
+
 export default function Home() {
   console.log();
   const foo = '#fff';
 
   return (
-    <div className="app-container">
-      <p className="heading-1">0936سلام دنیا</p>
-
+    <AppContainer className="bg-gray-50">
+      <HeroSection />
       <h1>سلام به همه</h1>
-    </div>
+    </AppContainer>
   );
 }

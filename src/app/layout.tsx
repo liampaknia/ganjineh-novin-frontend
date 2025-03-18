@@ -15,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${iranSans.className} ${iranSans.variable}`}>
-        {children}
+        <main style={{ height: '3000px' }}>
+          {children}
+          <div id="portal-root" />
+        </main>
       </body>
     </html>
   );
