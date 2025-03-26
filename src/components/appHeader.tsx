@@ -1,6 +1,7 @@
 'use client';
 import { cn } from '@/lib/cn';
 import SplitButton from './splitButton';
+import { HamburgerMenu } from 'solar-icon-set';
 import Logo from './logo';
 import Sidebar from './sideBar';
 import { useModalStore } from '@/store/modalStore';
@@ -14,11 +15,8 @@ const AppHeader = () => {
   };
   return (
     <header
-      className={cn(
-        'relative flex justify-between overflow-hidden bg-red-200 py-10',
-      )}
+      className={cn('relative flex justify-between overflow-hidden py-10')}
     >
-      <SplitButton />
       <div
         className={cn(
           'absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2',
@@ -26,12 +24,10 @@ const AppHeader = () => {
       >
         <Logo />
       </div>
-      <button
-        onClick={handleOpenSideBar}
-        className="rounded-md bg-blue-500 p-2 text-white"
-      >
-        باز کردن منو
+      <button onClick={handleOpenSideBar} className={cn('cursor-pointer')}>
+        <HamburgerMenu className="text-white!" size={40} iconStyle="Outline" />
       </button>
+      <SplitButton />
       {isSideBarOpen && <Sidebar isOpen={isSideBarOpen} onClose={closeModal} />}
     </header>
   );

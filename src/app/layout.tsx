@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import iranSans from '@/config/localFont';
+import { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -9,13 +10,16 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
+  modal: ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fa" dir="rtl">
       <body className={`${iranSans.className} ${iranSans.variable}`}>
         <main style={{ height: '3000px' }}>
+          {/* {modal} */}
           {children}
           <div id="portal-root" />
         </main>

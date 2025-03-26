@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, onClose }: ISidebarProps) => {
     <Portal>
       <div
         className={cn(
-          'fixed inset-0 z-40 transition-all duration-300',
+          'fixed inset-0 z-40 ms-auto transition-all duration-300',
           visible
             ? 'visible w-[calc(100%-400px)] bg-black/30'
             : 'invisible w-full bg-black/0',
@@ -38,18 +38,18 @@ const Sidebar = ({ isOpen, onClose }: ISidebarProps) => {
       />
       <div
         className={cn(
-          'fixed top-0 right-0 z-50 h-full w-[400px] bg-white/50 p-4 shadow-lg backdrop-blur-md transition-transform duration-300',
+          'fixed top-0 right-0 z-50 h-full w-[400px] border-l border-white/18 bg-white/50 backdrop-blur-md transition-transform duration-300',
           visible ? 'translate-x-0' : 'translate-x-full',
         )}
         onClick={(e) => e.stopPropagation()}
       >
         <button
           onClick={closeSidebar}
-          className="text-lg font-bold text-red-500"
+          className={cn('text-lg font-bold text-red-500')}
         >
-          ✕
+          خدمات سامانه نوین
         </button>
-        <p className="mt-4">محتوای سایدبار...</p>
+        <p className={cn('mt-4')}>محتوای سایدبار...</p>
       </div>
     </Portal>
   );

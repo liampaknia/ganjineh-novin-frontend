@@ -8,7 +8,7 @@
   --font-weight-heavy: 1000;
 
   /* Text Sizes */
-  --text-heading-1: 2.375rem; /* 38px */
+  --text-heading-1: 2.1875rem; /* 35px */
   --text-heading-2: 1.75rem; /* 28px */
   --text-heading-3: 1.5625rem; /* 25px */
 
@@ -28,4 +28,7 @@
   --color-black: #000;
   --color-gray-100: #aaaaaa;
   --color-gray-200: #7a7a7a;
+
+  /* Hero section */
+  --color-hero-section-main: #2e276c;
 }
