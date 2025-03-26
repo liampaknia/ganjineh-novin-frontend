@@ -9,8 +9,7 @@ const PhotoFrame = () => {
           src={'/person.png'}
           alt="photo frame"
           fill
-          objectFit="contain"
-          className={cn('max-w-full scale-x-[-1]')}
+          className={cn('max-w-full scale-x-[-1] object-contain')}
         />
       </div>
       <div
