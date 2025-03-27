@@ -4,7 +4,7 @@ import Image from 'next/image';
 const PhotoFrame = () => {
   return (
     <div className={cn('relative h-full grow-[2] overflow-hidden')}>
-      <div className={cn('relative z-10 h-full w-full')}>
+      <div className={cn('relative z-10 size-full')}>
         <Image
           src={'/person.png'}
           alt="photo frame"

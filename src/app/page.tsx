@@ -7,7 +7,7 @@ export default function Home() {
   const foo = '#fff';
 
   return (
-    <div className="">
+    <div>
       <HeroSection />
       <AppContainer className={cn('bg-gray-50')}>
         <p>محتوای سایت</p>

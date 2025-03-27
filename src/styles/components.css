@@ -21,4 +21,10 @@
     @apply mx-auto;
     max-width: 1340px;
   }
+  .dir-rtl {
+    direction: rtl;
+  }
+  .dir-ltr {
+    direction: ltr;
+  }
 }

@@ -14,7 +14,7 @@ const SearchBox = () => {
         <input
           type="text"
           placeholder="جست و جو کنید"
-          className={cn('h-full w-full p-4 pe-14 outline-0')}
+          className={cn('size-full p-4 pe-14 outline-0')}
         />
         <button
           className={cn(
